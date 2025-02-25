@@ -1,7 +1,7 @@
 # Taskly - Task Management Application
 
 ## Live Demo
-[Taskly Live Application](#) *(Replace with actual live link)*
+[Taskly Live Application](#) *([Replace with actual live link](https://taskly-66.firebaseapp.com/))*
 
 ## Description
 Taskly is a modern, responsive task management application that allows users to create, edit, delete, and reorder tasks with a drag-and-drop interface. Tasks are categorized into **To-Do, In Progress, and Done**, with real-time database synchronization ensuring data persistence. Authentication is handled via **Firebase**, and backend operations are managed using **Express.js** and **MongoDB**.
@@ -36,7 +36,7 @@ Taskly is a modern, responsive task management application that allows users to 
 - Clean, modern, and minimalistic design
 - Fully responsive for desktop and mobile users
 
-### 🌙 Bonus Features (Optional)
+### 🌙 Bonus Features 
 - Dark mode toggle
 - Task due dates with color-coded indicators
 - Activity log to track task movements
@@ -65,15 +65,20 @@ Ensure you have the following installed:
 - **MongoDB** (locally or via Atlas)
 - **Firebase project setup**
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Clone Client Repository
 ```sh
-git clone https://github.com/your-username/taskly.git
-cd taskly
+git clone https://github.com/aaliahammedpriom/taskly-client.git
+cd taskly-client
+```
+### 2️⃣ Clone Server Repository
+```sh
+git clone https://github.com/aaliahammedpriom/taskly-server.git
+cd taskly-server
 ```
 
-### 2️⃣ Setup Backend
+### 3️⃣ Setup Backend
 ```sh
-cd backend
+cd ../taskly-server
 npm install
 ```
 Create a `.env` file in the **backend** folder and add:
@@ -86,9 +91,9 @@ Run the server:
 npm start
 ```
 
-### 3️⃣ Setup Frontend
+###  Setup Frontend
 ```sh
-cd ../frontend
+cd ../taskly-client
 npm install
 ```
 Create a `.env` file in the **frontend** folder and add:
@@ -142,13 +147,10 @@ npm run dev
 
 ---
 
-## License
-This project is licensed under the **MIT License**.
 
----
 
 ## Contact
 For any issues, reach out via:
-- GitHub Issues: [https://github.com/your-username/taskly/issues](#)
-- Email: your-email@example.com *(Replace with actual email)*
+
+- Email: your-email@example.com *(aaliahammedpriom66@gmail.com)*
 
