@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 
-const uri = process.env.MONGODB_URI; 
+const uri ="mongodb+srv://taskly66:n1BGzWTi8iGklUFj@cluster0.5aulm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; 
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -32,7 +32,7 @@ async function run() {
 
         app.get('/tasks/:uid', async (req, res) => {
             let category;
-
+            // console.log(category)
             if (req.query.category) {
                 category = req.query.category
                 const result = await tasksCollection.find({ user_id: req.params.uid, category: category }).sort({ timestamp: -1 }).toArray()
